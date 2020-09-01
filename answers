@@ -1,0 +1,26 @@
+1) What does the word 'polymorphism' mean? 
+-Multiple forms
+2)What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+-It means an object can be multiple things.For example a Tesla is an instance of the car class, but it is also a vehicle.
+3)What can we use to implement polymorphism in Java?
+-We can use inheritance. Any object that satisfies more than one IS-A relationship is polymorphic,we can also use interfaces.
+4)How many 'forms' can an object take when using polymorphism? 
+-It depends on how we achieve polymorphism. An object of a class, can only inherit from one other superclass, but there are no limits how many interfaces
+a class can implement.
+5)Give an example of when you could use polymorphism.
+-Polymorphism allows a loose coupling of components and therefore makes the code more reusable. We could use it when we have an ArrayList.
+ArrayLists can only store items of one single type. If we wanted to store dogs, birds and cats in one ArrayList, we can do that by using polymorphism and creating a parent class called animal.
+Dogs, birds and cats are sub-classes of animal and if we create an ArrayList we can store these instances of the different sub-classes in there.
+
+6)What do we mean by 'composition' in reference to object-oriented programming? 
+-The object is part of a class.
+7)When would you use composition? Provide a simple example in Java.
+-An engine object is part of the car class. The engine cannot exist without the car.
+8)Give a difference between composition and aggregation?
+-A difference between composition and aggregation is that with composition the different parts of the class dont exist outside of the class.
+9)What is/are the advantage(s) of using composition/aggregation? 
+-It increases the re-useability of the code.
+10)When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+-They also get destroyed
+11)When using aggregation, when an object is destroyed, what happens to all the objects it is composed of?
+They still exist. If a car gets destroyed, we can remove the engine and use it in a different car.
